@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 80px 1fr 65px;
+    grid-template-areas: 
+        "header header"
+        "item item"
+        "side article"
+        "footer footer";
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size : 30px;
+    font-weight: bold;
+    /*background: gray;*/
+    padding-top: 20px;
+    vertical-align: middle;
+}
+.item {
+    grid-area: item;
+    text-align: center;
+    font-size: 20px;
+    background: grey;
+}
+.side {
+    grid-area: side;
+}
+.article {
+    grid-area: article;
+}
+.footer {
+    grid-area: footer;
+    background: #3a3938;
+    color: white;
+}
+
+.item ul li{
+    display: inline;
+}
+.footer a {
+    color: white;
+}
+.footer li {
+    list-style: none;
+    margin-left: 40%;
+}
+.footer ul {
+    margin-top: 0;
+}
