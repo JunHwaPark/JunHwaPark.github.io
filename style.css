@@ -25,6 +25,7 @@
 }
 .side {
     grid-area: side;
+    background: silver;
 }
 .article {
     grid-area: article;
