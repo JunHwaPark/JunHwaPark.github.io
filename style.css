@@ -1,7 +1,22 @@
+.index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 1fr 85px;
+    grid-template-areas: 
+        "header"
+        "item"
+        "intro"
+        "footer";
+}
+#intro {
+    grid-area: intro;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 .container {
     display: grid;
     grid-template-columns: 10% 1fr;
-    grid-template-rows: 100px 80px 1fr 65px;
+    grid-template-rows: 100px 80px 1fr 85px;
     grid-template-areas: 
         "header header"
         "item item"
@@ -41,13 +56,23 @@
 .item ul li{
     display: inline;
 }
+.black_a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 .footer a {
     color: white;
 }
 .footer li {
-    list-style: none;
     margin-left: 40%;
 }
 .footer ul {
     margin-top: 0;
+}
+li {
+    list-style: none;
+}
+p {
+    text-indent: 1em;
 }
